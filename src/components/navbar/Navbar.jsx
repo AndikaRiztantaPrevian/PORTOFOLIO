@@ -9,7 +9,7 @@ const Navbar = () => {
   }
 
   return (
-      <nav className='p-6'>
+      <nav className='p-6 font-sometype-mono'>
         <div className="container mx-auto flex lg:flex-row flex-col justify-center items-center">
           <div className="menu-button flex justify-end w-full lg:hidden">
             <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -17,10 +17,9 @@ const Navbar = () => {
             </button>
           </div>
           <div className={`lg:flex lg:items-center w-full lg:w-auto ${isOpen ? 'block' : 'hidden'}`}>
-            <ul className='lg:flex lg:gap-16 text-white font-semibold uppercase'>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/project">Project</Link></li>
-              <li><Link to="/skill">Skill</Link></li>
+            <ul className='lg:flex lg:gap-16 text-white font-semibold uppercase tracking-widest'>
+              <li><Link to="/">Home</Link></li> <span className='hidden lg:block select-none'>|</span>
+              <li><Link to="/project">Project</Link></li> <span className='hidden lg:block select-none'>|</span>
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>

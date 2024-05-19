@@ -15,6 +15,9 @@ export default {
           '2xl': '6rem',
         },
       },
+      fontFamily: {
+        'sometype-mono': ['Sometype Mono', 'monospace'],
+      },
     },
   },
   plugins: [],

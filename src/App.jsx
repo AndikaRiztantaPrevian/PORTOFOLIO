@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
-import Skill from "./pages/Skill";
 import Contact from "./pages/Contact";
 import Footer from "./components/footer/Footer";
 
@@ -15,7 +14,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Project />} />
-          <Route path="/skill" element={<Skill />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
