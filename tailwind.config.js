@@ -18,6 +18,9 @@ export default {
       fontFamily: {
         'sometype-mono': ['Sometype Mono', 'monospace'],
       },
+      backgroundImage: {
+        'custom-radial': 'radial-gradient(circle, #090924 1%, #0C0B0D 50%)',
+      },
     },
   },
   plugins: [],
