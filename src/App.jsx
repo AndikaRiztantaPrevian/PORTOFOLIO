@@ -5,11 +5,12 @@ import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Skill from "./pages/Skill";
 import Contact from "./pages/Contact";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
     <Router>
-      <div>
+      <div className="bg-gray-900 h-lvh">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -17,9 +18,10 @@ const App = () => {
           <Route path="/skill" element={<Skill />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
-}
+};
 
 export default App;
