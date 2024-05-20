@@ -21,8 +21,16 @@ export default {
       backgroundImage: {
         'custom-radial': 'radial-gradient(circle, #090924 1%, #0C0B0D 50%)',
       },
+      letterSpacing: {
+        tightest: '-.075em',
+        tighter: '-.05em',
+        tight: '-.025em',
+        normal: '0',
+        wide: '.025em',
+        wider: '.05em',
+        widest: '.25em',
+      }
     },
   },
   plugins: [],
 }
-

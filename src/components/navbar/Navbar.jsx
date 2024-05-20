@@ -17,7 +17,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className={`lg:flex lg:items-center w-full lg:w-auto ${isOpen ? 'block' : 'hidden'}`}>
-            <ul className='lg:flex lg:gap-4 text-white font-semibold uppercase tracking-widest'>
+            <ul className='lg:flex lg:gap-4 text-white font-normal uppercase tracking-widest'>
               <li><Link to="/">Home</Link></li> <span className='hidden lg:block select-none'>|</span>
               <li><Link to="/project">Project</Link></li> <span className='hidden lg:block select-none'>|</span>
               <li><Link to="/contact">Contact</Link></li>
