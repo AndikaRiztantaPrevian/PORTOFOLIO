@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 
 const Skills = ({ icon: Icon, name }) => {
   return (
-    <div className="flex flex-col items-center gap-2">
+    <div className="flex flex-col items-center gap-1 lg:gap-2">
       <div>
-        <Icon className="w-8 h-8" />
+        <Icon className="lg:w-8 lg:h-8 w-6 h-6" />
       </div>
       <div>
-        <p className="select-none text-sm">{name}</p>
+        <p className="select-none text-xs lg:text-sm">{name}</p>
       </div>
     </div>
   );

@@ -19,8 +19,8 @@ export default {
         'sometype-mono': ['Sometype Mono', 'monospace'],
       },
       backgroundImage: {
-        'custom-radial': 'radial-gradient(circle, #090924 10%, #0C0B0D 60%)',
-        'scroll-down': 'radial-gradient(circle, #090924 50%)'
+        'profile-1': 'radial-gradient(circle, #090924 10%, black 70%)',
+        'profile-2': 'radial-gradient(circle, #091224 12%, black 70%)',
       },
       letterSpacing: {
         tightest: '-.075em',
