@@ -22,7 +22,7 @@ const SkillsIssue = () => {
   return (
     <div className="flex flex-col justify-center items-center h-full">
       <div className="flex flex-col items-center justify-center space-y-8">
-        <h4 className={`${title}`} data-aos="fade-out" data-aos-duration="1500" data-aos-offset="200">Technologies & Tools</h4>
+        <h4 className={title} data-aos="fade-out" data-aos-duration="1500" data-aos-offset="200">Technologies & Tools</h4>
         <p className="w-2/3 text-center lg:text-2xl text-lg" data-aos="fade-out" data-aos-duration="1800" data-aos-offset="200">Here are the technologies and tools I utilize for website development.</p>
       </div>
       <div className="max-w-3xl flex flex-wrap px-2 gap-6 lg:gap-10 justify-center mt-12" data-aos="fade-out" data-aos-duration="2000" data-aos-offset="200">
