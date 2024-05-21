@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Skills = ({ icon: Icon, name, color }) => {
-  console.log(color);
   return (
     <div className="flex flex-col items-center gap-1 lg:gap-2">
       <div>
