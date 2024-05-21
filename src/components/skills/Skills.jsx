@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Skills = ({ icon: Icon, name }) => {
+const Skills = ({ icon: Icon, name, color }) => {
+  console.log(color);
   return (
     <div className="flex flex-col items-center gap-1 lg:gap-2">
       <div>
-        <Icon className="lg:w-8 lg:h-8 w-6 h-6" />
+        <Icon className={`lg:w-8 lg:h-8 w-6 h-6 ${color}`} />
       </div>
       <div>
         <p className="select-none text-xs lg:text-sm">{name}</p>
@@ -17,6 +18,7 @@ const Skills = ({ icon: Icon, name }) => {
 Skills.propTypes = {
   icon: PropTypes.elementType.isRequired,
   name: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 };
 
 export default Skills;

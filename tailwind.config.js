@@ -21,6 +21,7 @@ export default {
       backgroundImage: {
         'profile-1': 'radial-gradient(circle, #090924 10%, black 70%)',
         'profile-2': 'radial-gradient(circle, #091224 12%, black 70%)',
+        'custome-mobile': 'radial-gradient(circle, #091224 12%, black 70%)',
       },
       letterSpacing: {
         tightest: '-.075em',

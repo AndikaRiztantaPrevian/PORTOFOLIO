@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <div className="text-white font-sometype-mono">
       <div className="h-[90vh]">
-        <div className="container mx-auto h-[80%] flex justify-evenly items-center">
+        <div className="container mx-auto h-[80%] flex lg:flex-row bg-custome-mobile md:bg-none flex-col-reverse justify-evenly items-center">
           {/* LEFT */}
           <main data-aos="fade-right" data-aos-duration="1000" className="lg:w-1/2">
             <p className="font-bold text-3xl select-none">Hello, My name Andika.</p>
@@ -32,18 +32,17 @@ const Home = () => {
               />
             </div>
             <p className="text-lg text-justify mt-2 mb-3 select-none">
-              I am a passionate and creative web developer with 4 years of
-              experience building engaging and functional websites.
+              I am a dedicated and inventive web developer with four years of experience in crafting engaging and functional websites.
             </p>
             <div className="sosial-media">
               <SosialMedia />
             </div>
           </main>
           {/* RIGHT */}
-          <aside className="h-96 lg:w-1/3 lg:flex hidden justify-end items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="100">
-            <div className="bg-profile-1 h-full w-full absolute z-0 left-32 top-14"></div>
-            <div className="bg-profile-2 h-full w-full absolute z-0 right-30 bottom-14"></div>
-            <img className="rounded-t-full h-80 z-10" src={Foto} alt="Andika Riztanta Previan" />
+          <aside className="h-96 lg:w-1/3 flex justify-end items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="100">
+            <div className="bg-profile-1 h-full w-full absolute z-0 left-32 top-14 hidden xl:block"></div>
+            <div className="bg-profile-2 h-full w-full absolute z-0 right-30 bottom-14 hidden xl:block"></div>
+            <img className="rounded-t-full lg:h-80 h-40 z-10" src={Foto} alt="Andika Riztanta Previan" />
           </aside>
         </div>
         {/* Scroll Down */}
@@ -59,13 +58,13 @@ const Home = () => {
         </div>
       </div>
       {/* Skills */}
-      <div id="skills" className="bg-[#02020f] h-lvh flex flex-col py-6 justify-center items-center">
+      <div id="skills" className="bg-[#02020f] h-lvh flex flex-col  justify-center items-center">
         <div className="h-2/4">
           <Suspense fallback={<div>Loading ...</div>}>
             <SkillsIssue />
           </Suspense>
         </div>
-        <div className="h-2/5 flex">
+        <div className="h-2/5 flex xl:items-center sm:items-end">
           <Education />
         </div>
       </div>

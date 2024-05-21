@@ -7,19 +7,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 // ICON IMPORT FROM REACT-ICON
-import { FaGit } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
-import { FaLaravel } from "react-icons/fa";
-import { FaNode } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
+import { FaGitAlt, FaGithub, FaHtml5, FaLaravel, FaReact } from "react-icons/fa";
+import { IoLogoElectron, IoLogoJavascript } from "react-icons/io5";
+import { SiJquery, SiLaragon, SiPostman } from "react-icons/si";
 import { BiLogoTailwindCss } from "react-icons/bi";
-import { IoLogoElectron } from "react-icons/io5";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiJquery } from "react-icons/si";
-import { SiLaragon } from "react-icons/si";
-import { SiPostman } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa6";
+import { DiNodejs } from "react-icons/di";
 
 const SkillsIssue = () => {
   useEffect(() => {
@@ -27,24 +20,25 @@ const SkillsIssue = () => {
   }, [])
 
   return (
-    <div className="flex flex-col lg:justify-center align-center h-full">
-      <div className="flex justify-center" data-aos="fade-out" data-aos-duration="1500" data-aos-offset="200">
-        <h4 className={`${title}`}>Technologies & Tools</h4>
+    <div className="flex flex-col justify-center items-center h-full">
+      <div className="flex flex-col items-center justify-center space-y-8">
+        <h4 className={`${title}`} data-aos="fade-out" data-aos-duration="1500" data-aos-offset="200">Technologies & Tools</h4>
+        <p className="w-2/3 text-center lg:text-2xl text-lg" data-aos="fade-out" data-aos-duration="1800" data-aos-offset="200">Here are the technologies and tools I utilize for website development.</p>
       </div>
       <div className="max-w-3xl flex flex-wrap px-2 gap-6 lg:gap-10 justify-center mt-12" data-aos="fade-out" data-aos-duration="2000" data-aos-offset="200">
-        <Skill icon={FaReact} name="ReactJS" />
-        <Skill icon={FaLaravel} name="Laravel" />
-        <Skill icon={IoLogoElectron} name="Electron" />
-        <Skill icon={FaNode} name="NodeJS" />
-        <Skill icon={IoLogoJavascript} name="JavaScript" />
-        <Skill icon={SiJquery} name="jQuery" />
-        <Skill icon={BiLogoTailwindCss} name="TailwindCSS" />
-        <Skill icon={FaCss3Alt} name="CSS" />
-        <Skill icon={FaHtml5} name="HTML" />
-        <Skill icon={SiPostman} name="Postman" />
-        <Skill icon={SiLaragon} name="Laragon" />
-        <Skill icon={FaGit} name="Git" />
-        <Skill icon={FaGithub} name="Github" />
+        <Skill icon={FaReact} name="ReactJS" color="text-sky-300" />
+        <Skill icon={FaLaravel} name="Laravel" color="text-red-500" />
+        <Skill icon={IoLogoElectron} name="Electron" color="text-cyan-600" />
+        <Skill icon={DiNodejs} name="NodeJS" color="text-green-500" />
+        <Skill icon={IoLogoJavascript} name="JavaScript" color="text-yellow-500" />
+        <Skill icon={SiJquery} name="jQuery" color="text-cyan-500" />
+        <Skill icon={BiLogoTailwindCss} name="TailwindCSS" color="text-sky-400" />
+        <Skill icon={FaCss3Alt} name="CSS" color="text-sky-500" />
+        <Skill icon={FaHtml5} name="HTML" color="text-orange-500" />
+        <Skill icon={SiPostman} name="Postman" color="text-orange-500" />
+        <Skill icon={SiLaragon} name="Laragon" color="text-sky-500" />
+        <Skill icon={FaGitAlt} name="Git" color="text-orange-500" />
+        <Skill icon={FaGithub} name="Github" color="text-gray-200" />
       </div>
     </div>
   );
