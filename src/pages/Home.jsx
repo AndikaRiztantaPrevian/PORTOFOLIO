@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import SkillsIssue from "../components/skills/SkillsIssue";
 import Education from "../components/education/Education";
 import SosialMedia from "../components/sosial-media/SosialMedia";
-import ProfileImage from "../assets/web.webp";
+import Foto from "../assets/web.webp";
+
 // Packages
 import Typewriter from "typewriter-effect";
 import AOS from "aos";
@@ -40,7 +41,7 @@ const Home = () => {
           </main>
           {/* RIGHT */}
           <aside className="bg-custom-radial h-96 lg:w-1/3 lg:flex hidden justify-center items-center" data-aos="fade-left" data-aos-duration="1000" data-aos-offset="100">
-            <img className="h-80 rounded-t-full" src={ProfileImage} alt="Andika Riztanta Previan" />
+            <img className="rounded-t-full h-80" src={Foto} alt="Andika Riztanta Previan" />
           </aside>
         </div>
         {/* Scroll Down */}
