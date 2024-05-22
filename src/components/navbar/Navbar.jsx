@@ -20,11 +20,11 @@ const Navbar = () => {
   }
 
   return (
-    <nav data-aos="fade-out" data-aos-duration="2000" className='py-6 px-2 font-sometype-mono h-[10vh]'>
-      <div className="container mx-auto flex lg:flex-row flex-col justify-center items-center">
+    <nav data-aos="fade-out" data-aos-duration="2000" className='py-6 px-2 font-sometype-mono lg:h-[10vh] h-auto lg:relative absolute w-full'>
+      <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center">
         <div className="menu-button flex justify-end w-full lg:hidden">
           <button onClick={toggleMenu} className="text-white focus:outline-none">
-          <svg className='fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><rect y="11" width="24" height="2"/><rect y="4" width="24" height="2"/><rect y="18" width="24" height="2"/></svg>
+            <svg className='fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><rect y="11" width="24" height="2"/><rect y="4" width="24" height="2"/><rect y="18" width="24" height="2"/></svg>
           </button>
         </div>
         <div className={`lg:flex lg:items-center w-full lg:w-auto ${isOpen ? 'block' : 'hidden'}`}>

@@ -7,11 +7,6 @@ import Contact from "./pages/Contact";
 import Footer from "./components/footer/Footer";
 
 const App = () => {
-  const titleBg = `
-    p-2 h-full bg-gray-600 rounded-md bg-clip-padding
-    backdrop-filter backdrop-blur-md bg-opacity-10 border
-    border-gray-100 select-none
-  `;
   return (
     <Router>
       <div className="bg-black text-white font-sometype-mono">

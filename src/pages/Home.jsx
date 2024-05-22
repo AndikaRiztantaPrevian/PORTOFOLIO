@@ -17,8 +17,8 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <div className="h-[90vh]">
-        <div className="container mx-auto h-[80%] flex lg:flex-row bg-custome-mobile md:bg-none flex-col-reverse justify-evenly items-center">
+      <div className="sm:h-[90vh] h-[100vh]">
+        <div className="container mx-auto h-[90%] sm:h-[80%] flex lg:flex-row bg-custome-mobile md:bg-none flex-col-reverse justify-evenly items-center">
           {/* LEFT */}
           <main data-aos="fade-out" data-aos-duration="1000" className="lg:w-1/2">
             <p className="font-bold text-3xl select-none">Hello, I'm Andika.</p>
@@ -39,14 +39,14 @@ const Home = () => {
             </div>
           </main>
           {/* RIGHT */}
-          <aside className="h-96 lg:w-1/3 flex justify-end items-center" data-aos="fade-out" data-aos-duration="1000" data-aos-offset="100">
-            <div className="bg-profile-1 h-full w-full absolute z-0 left-32 top-14 hidden lg:block"></div>
-            <div className="bg-profile-2 h-full w-full absolute z-0 right-30 bottom-14 hidden lg:block"></div>
+          <aside className="sm:h-96 h-auto lg:w-1/3 flex justify-end items-center" data-aos="fade-out" data-aos-duration="1000" data-aos-offset="100">
+            <div className="bg-profile-1 h-full w-full relative lg:absolute z-0 left-32 top-14 hidden lg:block"></div>
+            <div className="bg-profile-2 h-full w-full relative lg:absolute z-0 right-30 bottom-14 hidden lg:block"></div>
             <img className="rounded-t-full lg:h-80 h-40 z-10" src={Foto} alt="Andika Riztanta Previan" />
           </aside>
         </div>
         {/* Scroll Down */}
-        <div className="bg-gradient-to-t from-[#02020f] h-[20%] flex justify-center items-center">
+        <div className="bg-gradient-to-t from-[#02020f] h-[10%] sm:h-[20%] flex justify-center items-center">
           <a href="#skills" className="h-full flex flex-col justify-center items-center hover:font-semibold">
             <div className="animate-bounce" data-aos="fade-out" data-aos-duration="1000" data-aos-offset="0">
               Scroll Down
