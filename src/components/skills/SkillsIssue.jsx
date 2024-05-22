@@ -20,12 +20,12 @@ const SkillsIssue = () => {
   }, [])
 
   return (
-    <div className="flex flex-col justify-center items-center h-full gap-y-5">
-      <div className="flex flex-col items-center justify-center gap-y-3 sm:space-y-8">
+    <div className="flex flex-col justify-center items-center h-full gap-y-8">
+      <div className="flex flex-col items-center justify-center gap-y-5 sm:gap-y-0 sm:space-y-5">
         <h4 className={title} data-aos="fade-out" data-aos-duration="1500" data-aos-offset="200">Technologies & Tools</h4>
         <p className="sm:w-2/3 w-full px-2 sm:px-0 text-center lg:text-2xl sm:text-lg text-sm" data-aos="fade-out" data-aos-duration="1800" data-aos-offset="200">Here are the technologies and tools I utilize for website development.</p>
       </div>
-      <div className="max-w-3xl flex flex-wrap justify-center sm:mt-12 sm:gap-6 lg:gap-10 gap-y-3 gap-x-4 px-2 sm:px-0" data-aos="fade-out" data-aos-duration="2000" data-aos-offset="200">
+      <div className="max-w-3xl flex flex-wrap justify-center  sm:gap-6 lg:gap-10 gap-y-3 gap-x-4 px-2 sm:px-0" data-aos="fade-out" data-aos-duration="2000" data-aos-offset="200">
         <Skill icon={FaReact} name="ReactJS" color="text-sky-300" />
         <Skill icon={FaLaravel} name="Laravel" color="text-red-500" />
         <Skill icon={IoLogoElectron} name="Electron" color="text-cyan-600" />

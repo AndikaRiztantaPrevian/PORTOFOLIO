@@ -4,10 +4,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Navbar = () => {
-  useEffect(() => {
-    AOS.init();
-  }, [])
-
   const [ isOpen, setIsOpen ] = useState(false);
   const location = useLocation();
 
@@ -19,6 +15,10 @@ const Navbar = () => {
     return location.pathname === path ? 'text-blue-500' : '';
   }
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <nav data-aos="fade-out" data-aos-duration="2000" className='py-6 px-2 font-sometype-mono lg:h-[10vh] h-auto lg:relative absolute w-full'>
       <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center">
@@ -29,9 +29,9 @@ const Navbar = () => {
         </div>
         <div className={`lg:flex lg:items-center w-full lg:w-auto ${isOpen ? 'block' : 'hidden'}`}>
           <ul className='lg:flex lg:gap-4 text-white font-normal uppercase tracking-widest'>
-            <li><Link to="/" className={`hover:text-blue-500 ${getLinkClass('/')}`}>Home</Link></li> <span className='hidden lg:block select-none'>|</span>
-            <li><Link to="/project" className={`hover:text-blue-500 ${getLinkClass('/project')}`}>Project</Link></li> <span className='hidden lg:block select-none'>|</span>
-            <li><Link to="/contact" className={`hover:text-blue-500 ${getLinkClass('/contact')}`}>Contact</Link></li>
+            <li className='w-28 text-center'><Link to="/" className={`hover:text-blue-500 ${getLinkClass('/')}`}>Home</Link></li>
+            <li className='w-28 text-center'><Link to="/project" className={`hover:text-blue-500 ${getLinkClass('/project')}`}>Project</Link></li>
+            <li className='w-28 text-center'><Link to="/contact" className={`hover:text-blue-500 ${getLinkClass('/contact')}`}>Contact</Link></li>
           </ul>
         </div>
       </div>

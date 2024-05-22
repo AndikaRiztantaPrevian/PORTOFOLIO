@@ -61,12 +61,12 @@ const Home = () => {
       <div id="skills" className="bg-[#02020f] h-lvh flex flex-col justify-center items-center relative overflow-hidden">
         <div className="bg-custome-skills-1 h-full w-full absolute left-60 top-16 z-0" data-aos="fade-out" data-aos-duration="3000" data-aos-offset="200"></div>
         <div className="bg-custome-skills-2 h-full w-full absolute right-52 bottom-8 z-0" data-aos="fade-out" data-aos-duration="2000" data-aos-offset="100"></div>
-        <div className="h-2/4">
+        <div className="h-2/4 lg:h-auto">
           <Suspense fallback={<div>Loading ...</div>}>
             <SkillsIssue />
           </Suspense>
         </div>
-        <div className="h-2/5 flex items-end md:items-center">
+        <div className="h-2/5 w-full flex justify-center items-center">
           <Education />
         </div>
       </div>
