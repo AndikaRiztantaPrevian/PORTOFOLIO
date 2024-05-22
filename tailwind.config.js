@@ -19,9 +19,11 @@ export default {
         'sometype-mono': ['Sometype Mono', 'monospace'],
       },
       backgroundImage: {
-        'profile-1': 'radial-gradient(circle, #090924 10%, black 70%)',
-        'profile-2': 'radial-gradient(circle, #091224 12%, black 70%)',
-        'custome-mobile': 'radial-gradient(circle, #091224 12%, black 70%)',
+        'profile-1': 'radial-gradient(circle, #090924 10%, transparent 70%)',
+        'profile-2': 'radial-gradient(circle, #091224 12%, transparent 70%)',
+        'custome-mobile': 'radial-gradient(circle, #091224 12%, transparent 70%)',
+        'custome-skills-1': 'radial-gradient(circle, #090924 1%, transparent 30%)',
+        'custome-skills-2': 'radial-gradient(circle, #091224 5%, transparent 45%)',
       },
       letterSpacing: {
         tightest: '-.075em',
