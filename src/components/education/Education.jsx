@@ -9,7 +9,7 @@ const Education = () => {
     AOS.init();
   }, []);
   return (
-    <div className="flex flex-col justify-center align-center">
+    <div className="flex flex-col justify-center">
       <div className="flex justify-center" data-aos="fade-out" data-aos-duration="1500" data-aos-offset="100">
         <h4 className={title}>Education</h4>
       </div>

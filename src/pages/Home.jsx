@@ -40,8 +40,8 @@ const Home = () => {
           </main>
           {/* RIGHT */}
           <aside className="sm:h-96 h-auto lg:w-1/3 flex justify-end items-center" data-aos="fade-out" data-aos-duration="1000" data-aos-offset="100">
-            <div className="bg-profile-1 h-full w-full relative lg:absolute z-0 left-32 top-14 hidden lg:block"></div>
-            <div className="bg-profile-2 h-full w-full relative lg:absolute z-0 right-30 bottom-14 hidden lg:block"></div>
+            <div className="bg-profile-1 h-full w-full relative hidden xl:block lg:absolute z-0 left-32 top-14"></div>
+            <div className="bg-profile-2 h-full w-full relative hidden lg:block lg:absolute z-0 right-30 bottom-14"></div>
             <img className="rounded-t-full lg:h-80 h-40 z-10" src={Foto} alt="Andika Riztanta Previan" />
           </aside>
         </div>
@@ -61,12 +61,12 @@ const Home = () => {
       <div id="skills" className="bg-[#02020f] h-lvh flex flex-col justify-center items-center relative overflow-hidden">
         <div className="bg-custome-skills-1 h-full w-full absolute left-60 top-16 z-0" data-aos="fade-out" data-aos-duration="3000" data-aos-offset="200"></div>
         <div className="bg-custome-skills-2 h-full w-full absolute right-52 bottom-8 z-0" data-aos="fade-out" data-aos-duration="2000" data-aos-offset="100"></div>
-        <div className="h-2/4 lg:h-auto">
+        <div className="h-2/4 lg:h-auto" >
           <Suspense fallback={<div>Loading ...</div>}>
             <SkillsIssue />
           </Suspense>
         </div>
-        <div className="h-2/5 w-full flex justify-center items-center">
+        <div className="h-2/5 w-full flex justify-center items-center sm:items-start lg:items-center">
           <Education />
         </div>
       </div>
