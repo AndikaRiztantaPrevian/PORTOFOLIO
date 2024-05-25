@@ -14,7 +14,7 @@ const Education = () => {
         <h4 className={title}>Education</h4>
       </div>
       <div className="max-w-3xl flex flex-wrap gap-10 justify-center mt-5" data-aos="fade-out" data-aos-duration="2000" data-aos-offset="100">
-        <div className="h-full w-full bg-gray-800 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-5 text-center text-sm text-md-md">
+        <div className="h-full w-full border border-blue-300 bg-gray-800 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 p-5 text-center text-sm text-md-md">
             <p>SMK NEGERI 1 KOTA PROBOLINGGO</p>
             <p>Software Engineering</p>
         </div>
