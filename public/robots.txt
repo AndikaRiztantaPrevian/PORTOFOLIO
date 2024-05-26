@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://andikariztantaprevian.my.id/sidemap.xml
+Sitemap: https://andikariztantaprevian.my.id/sitemap.xml
